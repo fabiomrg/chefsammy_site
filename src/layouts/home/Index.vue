@@ -1,6 +1,7 @@
 <template>
   <v-app>
     
+    
     <home-app-bar />
 
     <home-view />
@@ -8,6 +9,9 @@
     <home-footer />
 
     <home-settings />
+
+    <home-menu />
+
   </v-app>
 </template>
 
@@ -19,6 +23,7 @@
       HomeAppBar: () => import('@/layouts/home/AppBar'),
       HomeFooter: () => import('@/layouts/home/Footer'),
       HomeSettings: () => import('@/layouts/home/Settings'),
+      HomeMenu: () => import('@/layouts/home/menu'),
       HomeView: () => import('@/layouts/home/View'),
     },
   }

@@ -22,7 +22,7 @@
 
           <base-heading
              size="text-h2"
-            title="...COM MUITO AMOR!"
+            title="..COM MUITO AMOR!"
             weight="medium"
           />
 

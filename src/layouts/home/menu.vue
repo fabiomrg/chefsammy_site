@@ -5,26 +5,26 @@
     bottom
     left
     max-width="100%"
-    min-width="320"
+    min-width="120"
     offset-x
     offset-y
-    origin="top right"
+    origin="top left"
     transition="scale-transition"
   >
     <template #activator="{ attrs, on }">
       <v-card
         id="settings"
         class="py-2 px-4"
-        color="#4eab9c"
+        color="#e67c05"
         dark
         flat
-        style="position: fixed; top: 164px; right: -35px;"
-        width="100"
+        style="position: fixed; top: 164px; left: -5px;"
+        width="70"
         v-bind="attrs"
         v-on="on"
       >
         <v-icon large>
-          mdi-whatsapp
+          mdi-menu
         </v-icon>
       </v-card>
     </template>
@@ -33,81 +33,68 @@
       <br/>
       <base-title
         align="center"
-        title="Contatos"
+        title="Menu"
         space="0"
       />
 
       <v-card-text>
-        <v-item-group
-         
-          class="d-flex justify-center"
-        >
-        </v-item-group>
-
+    
         <v-divider class="my-6" />
-
-        <div
-          class="mr-4"
-         
-        >
-          <v-icon left>
-            mdi-mail
-          </v-icon>
-          chefsammyvegano@gmail.com
-        </div>
-
-        <v-divider class="my-6" />
-
-       <div
-          class="mr-4"
-         
-        >
-          <v-icon left>
-            mdi-phone
-          </v-icon>
-          (11)98943-0389
-        </div>
-
-        <v-divider class="my-6" />
-
         <base-btn
           block
-          href="https://api.whatsapp.com/send/?phone=5511989430389"
+          @click="$vuetify.goTo('#about')"
           class="mb-6"
           color="black"
           outlined
           target="_blank"
         >
-        <v-icon left>
-            mdi-whatsapp
-          </v-icon>
-          Whatsapp
+        
+          Sobre mim
+        </base-btn>
+        <base-btn
+          block
+          @click="$vuetify.goTo('#eventos')"
+          class="mb-6"
+          color="black"
+          outlined
+          target="_blank"
+        >
+        
+          Eventos
         </base-btn>
           <base-btn
           block
-          href="https://instagram.com/chefsammygonzalez"
+          @click="$vuetify.goTo('#cursos')"
+          
           class="mb-6"
           color="black"
           outlined
           target="_blank"
         >
-        <v-icon left>
-            mdi-instagram
-          </v-icon>
-          Instagram
+          Cursos
         </base-btn>
           <base-btn
           block
-          href="https://www.facebook.com/sammygonzalezchef"
+          @click="$vuetify.goTo('#consultoria')"
+         
           class="mb-6"
           color="black"
           outlined
           target="_blank"
         >
-        <v-icon left>
-            mdi-facebook
-          </v-icon>
-          Facebook
+          Consultoria
+        </base-btn>
+      
+          <base-btn
+          block
+          @click="$vuetify.goTo('#contatos')"
+         
+          class="mb-6"
+          color="black"
+          outlined
+          target="_blank"
+        >
+          Contatos
         </base-btn>
         
 
@@ -129,7 +116,7 @@
           '#9368e9',
           '#F4511E',
         ],
-        menu: false,
+        
       }
     },
 

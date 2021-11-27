@@ -5,17 +5,17 @@
       app
       height="150">
         <v-container>
-          <v-row justify="center">
+          <v-row no-gutters justify="center">
            <v-img
               :src="require('@/assets/sammy_logo.jpg')"
               class="mr-3"
-              max-height="150"
+              max-height="130"
              
             />
           </v-row>
           <v-row no-gutters>
             <v-col cols="12" class="text-center">
-              
+              100% Vegano / Plant based
             </v-col>
           </v-row>
         </v-container>
