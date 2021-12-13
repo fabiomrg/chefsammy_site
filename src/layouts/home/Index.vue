@@ -1,7 +1,6 @@
 <template>
   <v-app>
     
-    
     <home-app-bar />
 
     <home-view />
@@ -10,7 +9,7 @@
 
     <home-settings />
 
-    <home-menu />
+    
 
   </v-app>
 </template>

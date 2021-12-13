@@ -2,34 +2,36 @@
   <section id="hero">
     <v-img
       :min-height="minHeight"
-      :src="require('@/assets/light.jpg')"
+      :src="require('@/assets/vegan-food.jpg')"
       class="white--text"
-      gradient="to bottom, rgba(20, 20, 20, .9), rgba(0,0,0,.6)"
+      gradient="to bottom, rgba(20, 20, 20, .6), rgba(0,0,0,.3)"
     >
-      <v-container class="px-4 py-12">
+      <v-container class="px-2 py-0">
         <v-responsive
           class="d-flex align-center mx-auto"
-          height="100%"
-          max-width="600"
+          height="50%"
+          max-width="800"
           width="90%"
         >
-        <br/>
-          <base-subheading
-          size="text-h5"
-          weight="regular"
-          title="CELEBRE A UNIÃO, A VITÓRIA, OS ENCONTROS, OS REENCONTROS E A VIDA..."  
-         />
+        <br/><br/><br/>
+        <v-card class="rounded-card " color="#0000008D">
+          <br/><br/>
+          <v-row class="mx-8" align="center">
+            <base-subheading
+            size="text-h5"
+            weight="regular"
+            title="Veganismo é a grande ferramenta para transformar o mundo!"  
+            />
+            <base-body>
+              <p>O ser humano por séculos tem se desconectado da natureza e por consequência lógica também se afastou das relações de compaixão pela terra de seus seres.</p>
+              <p>O termo vegano já existe há 77 anos e foi criado pelo britânico Donald Watson e, desde então, transformou-se em um movimento político, ético e de estilo de vida, e vem ganhando muitos adeptos, mas hoje não é apenas isso, o veganismo é movimento.</p> 
+              <p>Mas ainda temos muito a percorrer para que o mundo alcance o alinhamento e equilíbrio necessário para sermos sustentáveis em todos os âmbitos da nossa vida.</p>
+              <p>Meu compromisso como Chef de gastronomia exclusivamente vegana é pensar, falar e praticar o veganismo, somente uma consciência livre de sofrimento vai transformar o planeta!</p>
 
-          <base-heading
-             size="text-h2"
-            title="..COM MUITO AMOR!"
-            weight="medium"
-          />
-
-          <base-body>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis neque aspernatur in quas iure id aliquid, esse debitis, quibusdam mollitia! Quia ea expedita magnam totam, earum omnis et perspiciatis?
-          </base-body>
-
+            </base-body>
+          </v-row>
+        </v-card>
+        <br/><br/><br/><br/>
         </v-responsive>
       </v-container>
     </v-img>
@@ -46,10 +48,16 @@
 
     computed: {
       minHeight () {
-        const height = this.$vuetify.breakpoint.mdAndUp ? '100vh' : '50vh'
+        const height = this.$vuetify.breakpoint.mdAndUp ? '50vh' : '25vh'
 
         return `calc(${height} - ${this.$vuetify.application.top}px)`
       },
     },
   }
 </script>
+<style scoped>
+  .rounded-card{
+      border-radius:30px;
+  }
+
+</style>

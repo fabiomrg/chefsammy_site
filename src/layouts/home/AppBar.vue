@@ -3,24 +3,30 @@
     <v-app-bar
       id="home-app-bar"
       app
-      height="150">
-        <v-container>
-          <v-row no-gutters justify="center">
-           <v-img
+      elevation="1"
+      height="130"
+      >
+        <home-menu/>
+
+         <v-container>
+        
+          <v-row justify="center">
+            <v-img 
+              max-width="500"
               :src="require('@/assets/sammy_logo.jpg')"
-              class="mr-3"
-              max-height="130"
-             
             />
           </v-row>
           <v-row no-gutters>
             <v-col cols="12" class="text-center">
-              100% Vegano / Plant based
+        
             </v-col>
           </v-row>
         </v-container>
-
-
+          
+         
+         
+           
+        
     </v-app-bar>
  
 </template>
@@ -36,6 +42,11 @@
         'Pro',
       ],
     }),
+
+    components: {
+      
+      HomeMenu: () => import('@/layouts/home/menu'),
+    },
   }
 </script>
 
@@ -43,9 +54,12 @@
   #home-app-bar
     .v-tabs-slider
       max-width: 24px
-      margin: 0 auto
+      margin: 2 auto
 
     .v-tab
       &::before
         display: none
+  #padding-zero
+    .padding-zero
+
 </style>

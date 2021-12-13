@@ -17,7 +17,8 @@
       LoadSections([
         'hero',
         'theme-features',
-    
+        
+        'social-media',
         
       ]),
     ],

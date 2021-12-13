@@ -15,15 +15,13 @@
       <v-card
         id="settings"
         class="py-2 px-4"
-        color="#e67c05"
-        dark
         flat
-        style="position: fixed; top: 164px; left: -5px;"
+        style="position: fixed; top: 30px; left: -5px;"
         width="70"
         v-bind="attrs"
         v-on="on"
       >
-        <v-icon large>
+        <v-icon large color="black">
           mdi-menu
         </v-icon>
       </v-card>
