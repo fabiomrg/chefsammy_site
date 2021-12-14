@@ -18,7 +18,7 @@
         color="#0000004D"
         dark
         flat
-        style="position: fixed; top: 132px; right: -35px;"
+        style="position: fixed; top: 100px; right: -35px;"
         width="100"
         v-bind="attrs"
         v-on="on"

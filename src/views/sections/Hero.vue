@@ -4,7 +4,7 @@
       :min-height="minHeight"
       :src="require('@/assets/vegan-food.jpg')"
       class="white--text"
-      gradient="to bottom, rgba(20, 20, 20, .6), rgba(0,0,0,.3)"
+      gradient="to bottom, rgba(20, 20, 20, .4), rgba(0,0,0,.3)"
     >
       <v-container class="px-2 py-0">
         <v-responsive
@@ -14,7 +14,7 @@
           width="90%"
         >
         <br/><br/><br/>
-        <v-card class="rounded-card " color="#0000008D">
+        <v-card class="rounded-card " color="#0000004D">
           <br/><br/>
           <v-row class="mx-8" align="center">
             <base-subheading
@@ -57,7 +57,7 @@
 </script>
 <style scoped>
   .rounded-card{
-      border-radius:30px;
+      border-radius:20px;
   }
 
 </style>

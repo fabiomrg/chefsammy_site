@@ -16,7 +16,7 @@
         id="settings"
         class="py-2 px-4"
         flat
-        style="position: fixed; top: 30px; left: -5px;"
+        style="position: fixed; top: 20px; left: -5px;"
         width="70"
         v-bind="attrs"
         v-on="on"
@@ -51,14 +51,14 @@
         </base-btn>
         <base-btn
           block
-          @click="$vuetify.goTo('#eventos')"
+          @click="$vuetify.goTo('#servicos')"
           class="mb-6"
           color="black"
           outlined
           target="_blank"
         >
         
-          Eventos
+          Serviços
         </base-btn>
           <base-btn
           block

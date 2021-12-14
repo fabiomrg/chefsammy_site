@@ -1,8 +1,7 @@
 <template>
   <base-section id="theme-features">
  
-  
-    <base-section-heading id="eventos" title="Eventos">
+    <base-section-heading id="servicos" title="Serviços">
     </base-section-heading>
     
     <v-container>
@@ -68,7 +67,7 @@
         },
           {
           title: 'Buffet de Casamento',
-          icon: 'mdi-account-star',
+          icon: 'mdi-ring',
           text: 'A celebração da sagrada união de duas almas para trilhar uma jornada tão importante merece uma alimentação alinhada com os novos tempos. Cardápio sensível e personalizado como a ocasião merece e surpreender seus convidados! Atendo São Paulo e interior! Levamos tudo o que é necessário para um cuidado preciso: Material, serviço, respeito e amor que ocasião merece!'
 
         },
@@ -80,26 +79,29 @@
         },
         
         {
-          title: 'Corporativos',
-          icon: 'mdi-account-star',
-          text: 'Reunião de negócios, apresentação de produtos, roda de conversas, treinamentos e celebrações! Consulte os formatos de atendimento!'
-
-        },
-        {
-          title: 'Kit Escola',
-          icon: 'mdi-account-star',
-          text: 'A escola é um dos momentos mais importantes da vida pois estamos iniciando nossa jornada de socialização e que sem dúvidas levamos para sempre em nossas memórias! Preparo kit individuais e descartáveis para facilitar a manipulação dos presentes com cardápio especial para o paladar infanto juvenil!Consulte opções de cardápio!'
-
-        },
-        {
           title: 'Kit picnic',
-          icon: 'mdi-account-star',
+          icon: 'mdi-food-apple',
           text: 'Uma experiência especial ao ar livre em conexão com a natureza e liberdade que o momento nos proporciona! O cardápio kit picnic é levado em embalagens individuais e descartáveis para facilitar o manuseio! Consulte cardápio que pode ser quente ou frio!'
 
         },
+        
+        {
+          title: 'Kit Escola',
+          icon: 'mdi-town-hall',
+          text: 'A escola é um dos momentos mais importantes da vida pois estamos iniciando nossa jornada de socialização e que sem dúvidas levamos para sempre em nossas memórias! Preparo kit individuais e descartáveis para facilitar a manipulação dos presentes com cardápio especial para o paladar infanto juvenil!Consulte opções de cardápio!'
+
+        },
+
+        {
+          title: 'Corporativos',
+          icon: 'mdi-account-tie',
+          text: 'Reunião de negócios, apresentação de produtos, roda de conversas, treinamentos e celebrações! Consulte os formatos de atendimento!'
+
+        },
+        
         {
           title: 'Cestas especiais',
-          icon: 'mdi-account-star',
+          icon: 'mdi-star',
           text: 'Surpreender e ser surpreendido com uma cesta incrível, com ingredientes saborosos e selecionados com delicadeza para elevar a experiência ao máximo! Consulte!'
 
         },
