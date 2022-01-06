@@ -65,7 +65,7 @@
           <v-icon left>
             mdi-phone
           </v-icon>
-          (11)98943-0389
+          <a href="tel:+55-11-98943-0389">(11) 98943-0389</a>
         </div>
 
         <v-divider class="my-6" />

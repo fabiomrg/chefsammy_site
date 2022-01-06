@@ -21,13 +21,53 @@
           </base-avatar-card>
         </v-col>
       </v-row>
-    </v-container>
-    <base-section-heading id="cursos" title="Cursos">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum veniam cum dolores ratione commodi beatae quas maxime, laboriosam excepturi solut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum veniam cum dolores ratione commodi beatae quas maxime, laboriosam excepturi solut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum veniam cum dolores ratione commodi beatae quas maxime, laboriosam excepturi solut!
-    </base-section-heading>
-     <base-section-heading id="consultoria" title="Consultoria">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum veniam cum dolores ratione commodi beatae quas maxime, laboriosam excepturi solut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum veniam cum dolores ratione commodi beatae quas maxime, laboriosam excepturi solut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum veniam cum dolores ratione commodi beatae quas maxime, laboriosam excepturi solut!
-    </base-section-heading>
+    </v-container><br/><br/><br/>
+    <base-section-heading id="cursos" title="Cursos e Treinamentos">
+     <b>Aprenda a criar e preparar pratos nutritivos, deliciosos e 100% veganos.
+      Cursos presenciais: </b>
+      </base-section-heading>
+      <v-container>
+        <v-row>
+          <v-col
+            v-for="(master, i) in masterclass"
+            :key="i"
+            cols="12"
+            md="6"
+          >
+            <base-avatar-card
+              v-bind="master"
+              align="left"
+              horizontal
+            >
+              {{text}}
+            </base-avatar-card>
+          </v-col>
+        </v-row>
+      </v-container><br/><br/><br/>  
+
+    
+     <base-section-heading id="consultoria" title="Consultoria para Restaurantes">
+        <b>O veganismo veio para ficar e seu restaurante não pode ficar fora!</b>
+     </base-section-heading>
+    <v-container>
+      <v-row>
+        <v-col
+          v-for="(consult, i) in consulting"
+          :key="i"
+          cols="12"
+          md="6"
+        >
+          <base-avatar-card
+            v-bind="consult"
+            align="left"
+            horizontal
+          >
+            {{text}}
+          </base-avatar-card>
+        </v-col>
+      </v-row>
+    </v-container><br/><br/><br/>
+    
   
 
    <base-section-heading id="about" title="Sammy Gonzalez">
@@ -106,6 +146,52 @@
 
         },
       ],
+
+      masterclass: [
+  
+        {      
+          title: '- Treinamento Personalizados',
+          
+          text:'Um treinamento específico para as necessidades do aprendiz é realizado em sua própria cozinha ou local de trabalho!  - Consulte. '
+        },
+    
+        {
+          title: '- Em grupos',
+          
+          text:'Curso de agenda mensal que pode ser 1, 2 ou 3 módulos! Acompanhe no instagram.'
+        },
+          {
+          title: '- Online',
+          
+          text: 'Estou preparando uma deliciosa Masterclass de Bases da Gastronomia vegana! Em breve terei notícias do lançamento, acompanhe nas redes sociais!'
+
+        },
+        
+      ],
+
+      consulting: [
+  
+        {  
+          title: '- Opções Veganas',    
+          text: 'Introduza pratos deliciosamente veganos em seu cardápio!',
+          
+        },
+    
+        {
+          title: '- Aprimoramento de receitas',
+          text: 'Melhore suas receitas veganas e surpreenda seus clientes?',
+          
+        },
+          {
+          title: '- Entendendo o veganismo',
+          text: 'Quer aprender sobre o mundo vegano, sustentabilidade e como atender este grupo que cresce exponencialmente a cada ano?',
+          
+          
+
+        },
+        
+      ],
+
     }),
   }
 </script>

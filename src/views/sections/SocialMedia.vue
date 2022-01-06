@@ -17,9 +17,9 @@
       </base-section-heading>
         
         <v-icon right>
-          mdi-whatsapp
+          mdi-phone
         </v-icon>
-        (11) 98943-0389 <br/><br/>
+        <a href="tel:+55-11-98943-0389" style="color:#FFFFFF">(11) 98943-0389</a> <br/><br/>
         <v-icon left>
             mdi-mail
           </v-icon>

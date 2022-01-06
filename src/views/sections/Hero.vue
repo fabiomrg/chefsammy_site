@@ -23,11 +23,11 @@
             title="Veganismo é a grande ferramenta para transformar o mundo!"  
             />
             <base-body >
-              <p class="text-white">O ser humano por séculos tem se desconectado da natureza e por consequência lógica também se afastou das relações de compaixão pela terra de seus seres.</p>
-              <p class="text-white">O termo vegano já existe há 77 anos e foi criado pelo britânico Donald Watson e, desde então, transformou-se em um movimento político, ético e de estilo de vida, e vem ganhando muitos adeptos, mas hoje não é apenas isso, o veganismo é movimento.</p> 
-              <p class="text-white">Mas ainda temos muito a percorrer para que o mundo alcance o alinhamento e equilíbrio necessário para sermos sustentáveis em todos os âmbitos da nossa vida.</p>
-              <p class="text-white">Meu compromisso como Chef de gastronomia exclusivamente vegana é pensar, falar e praticar o veganismo, somente uma consciência livre de sofrimento vai transformar o planeta!</p>
-
+              <p class="text-white">O ser humano por séculos tem se desconectado da natureza e por consequência lógica também se afastou das relações de compaixão pela terra e seus seres.</p>
+              <p class="text-white">O termo vegano já existe desde 1944 e foi criado pelo britânico Donald Watson e, desde então, transformou-se em um movimento político, ético e de estilo de vida, e vem ganhando muitos adeptos, mas hoje não é apenas isso, o veganismo é o futuro que construímos agora.</p> 
+              <p class="text-white">Meu compromisso como especialista em gastronomia exclusivamente plant based é pensar, expressar e praticar o veganismo como forma de ampliar a consciência de forma leve, divertida e saborosa.</p>
+              <p class="text-white">Ainda há muito a percorrer para um mundo mais equilibrado e sustentável, mas tenho certeza que de mãos dadas podemos encurtar esse caminho.</p>
+              <p class="text-white">Vamos viver essa experiência juntos?</p>
             </base-body>
           </v-row>
         </v-card>
