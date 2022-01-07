@@ -9,8 +9,7 @@
 
     <home-settings />
 
-    
-
+  
   </v-app>
 </template>
 

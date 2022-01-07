@@ -1,7 +1,7 @@
 <template>
-  <base-section id="theme-features">
- 
-    <base-section-heading id="servicos" title="Serviços">
+  <base-section id="servicos">
+  
+    <base-section-heading title="Serviços">
     </base-section-heading>
     
     <v-container>
@@ -21,33 +21,42 @@
           </base-avatar-card>
         </v-col>
       </v-row>
-    </v-container><br/><br/><br/>
-    <base-section-heading id="cursos" title="Cursos e Treinamentos">
-     <b>Aprenda a criar e preparar pratos nutritivos, deliciosos e 100% veganos.
-      Cursos presenciais: </b>
+    </v-container><br/>
+    <div id="cursos" style="background-color: #e4e4e4">
+      <br/><br/><br/>
+      <base-section-heading title="Cursos e Treinamentos">
+        <v-row class="mx-6" align="center">
+        <b>Aprenda a criar e preparar pratos nutritivos, deliciosos e 100% veganos.
+          Cursos presenciais: </b>
+        </v-row>
       </base-section-heading>
       <v-container>
-        <v-row>
-          <v-col
-            v-for="(master, i) in masterclass"
-            :key="i"
-            cols="12"
-            md="6"
-          >
-            <base-avatar-card
-              v-bind="master"
-              align="left"
-              horizontal
+          <v-row>
+            <v-col
+              v-for="(master, i) in masterclass"
+              :key="i"
+              cols="12"
+              md="6"
             >
-              {{text}}
-            </base-avatar-card>
-          </v-col>
-        </v-row>
-      </v-container><br/><br/><br/>  
-
+              <base-avatar-card
+                v-bind="master"
+                align="left"
+                horizontal
+              >
+                {{text}}
+              </base-avatar-card>
+            </v-col>
+          </v-row>
+      </v-container><br/>
+      <br/><br/>
+    </div>
     
-     <base-section-heading id="consultoria" title="Consultoria para Restaurantes">
-        <b>O veganismo veio para ficar e seu restaurante não pode ficar fora!</b>
+    <div id="consultoria" >
+      <br/><br/><br/>
+     <base-section-heading title="Consultoria para Restaurantes">
+      <v-row class="mx-6" align="center">
+          <b>O veganismo veio para ficar e seu restaurante não pode ficar fora!</b>
+      </v-row>
      </base-section-heading>
     <v-container>
       <v-row>
@@ -67,24 +76,27 @@
         </v-col>
       </v-row>
     </v-container><br/><br/><br/>
-    
+    </div>
   
-
-   <base-section-heading id="about" title="Sammy Gonzalez">
-      <v-row justify="center">
+   <div id="about" style="background-color: #e4e4e4">
+     <br/><br/>
+    <base-section-heading title="Sammy Gonzalez">
+        <div class="d-flex flex-column justify-space-between align-center">
         <v-img 
-        max-width="300"
-        :src="require('@/assets/sammy.jpg')"
-        
-      ></v-img>
-      </v-row>
+          max-width="350"
+          :src="require('@/assets/sammy.jpg')"
+          
+          ></v-img>
+        </div>
+        <br/><br/>
+        <v-row class="mx-6" align="center">
+        Sou Sammy Gonzalez, crio e preparo pratos veganos, busco sempre surpreender com experiências sensoriais que marquem, valorizem e estimulem a apreciação da alimentação a base de plantas. Predominantemente utilizo produtos orgânicos vindos de pequenos produtores e da agricultura familiar.
+        </v-row>
+      </base-section-heading>
       <br/>
-      Sou Sammy Gonzalez, crio e preparo pratos veganos, busco sempre surpreender com experiências sensoriais que marquem, valorizem e estimulem a apreciação da alimentação a base de plantas. Predominantemente utilizo produtos orgânicos vindos de pequenos produtores e da agricultura familiar.
-    </base-section-heading>
-
+   </div>
   </base-section>
   
-
 </template>
 
 <script>
